@@ -16,6 +16,7 @@ map <F4> :Tlist<CR>
 map <F2> :30Vex<CR>
 set nu
 set mouse=a
+nnoremap <C-c> :shell<CR>
 set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-L> :bprev<CR>
