@@ -9,3 +9,11 @@ tags
 .DS_Store
 doc/tags*
 *.pyc
+lib/*
+doc/tags
+*.obj
+*.o
+*.so
+*.dll
+*.swp
+*~
