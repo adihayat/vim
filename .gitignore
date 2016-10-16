@@ -17,3 +17,6 @@ doc/tags
 *.dll
 *.swp
 *~
+doc/tags
+*.lock
+.vim-flavor

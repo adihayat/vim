@@ -18,12 +18,14 @@ set nu
 set mouse=a
 set hidden
 nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprev<CR>
-nnoremap <C-p> :Unite file_rec/async<cr>
+nnoremap <C-L> :bprev<CR>
+nnoremap <C-P> :Unite file_rec/async<cr>
 nnoremap <space>/ :Unite grep:.<cr>
 let g:unite_source_history_yank_enable = 1
 nnoremap <space>y :Unite history/yank<cr>
 nnoremap <space>s :Unite -quick-match buffer<cr>
+let g:airline#extensions#tabline#enabled = 1
+
 
 try
 source ~/.vim_runtime/my_configs.vim
