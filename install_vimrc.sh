@@ -25,7 +25,7 @@ let g:unite_source_history_yank_enable = 1
 nnoremap <space>y :Unite history/yank<cr>
 nnoremap <space>s :Unite -quick-match buffer<cr>
 let g:airline#extensions#tabline#enabled = 1
-
+let g:airline_theme="base16color"
 
 try
 source ~/.vim_runtime/my_configs.vim
