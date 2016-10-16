@@ -27,6 +27,8 @@ nnoremap <space>y :Unite history/yank<cr>
 nnoremap <space>s :Unite -quick-match buffer<cr>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="base16color"
+let g:cpp_class_scope_highlight = 1
+let g:cpp_experimental_template_highlight = 1
 
 try
 source ~/.vim_runtime/my_configs.vim
