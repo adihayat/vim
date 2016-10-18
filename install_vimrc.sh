@@ -29,6 +29,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="base16color"
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
+set tabstop=4
+set softtabstop=0 noexpandtab
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 try
 source ~/.vim_runtime/my_configs.vim
