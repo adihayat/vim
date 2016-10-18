@@ -14,6 +14,7 @@ source ~/.vim_runtime/vimrcs/cscope_maps.vim
 source ~/.vim_runtime/vimrcs/taglist.vim
 map <F4> :Tlist<CR>
 map <F2> :30Vex<CR>
+nnoremap <F3> :! ctags -R . ; cscope -R -b<CR>
 set nu
 set mouse=a
 nnoremap <C-c> :shell<CR>
@@ -32,6 +33,8 @@ let g:cpp_experimental_template_highlight = 1
 set tabstop=4
 set softtabstop=0 noexpandtab
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
+"" Change to Project specific to add project included path 
+let g:ycm_global_ycm_extra_conf = "/usr/lib/vim-youcompleteme/ycm_extra_conf.py"
 
 try
 source ~/.vim_runtime/my_configs.vim
