@@ -1,4 +1,4 @@
-sudo apt-get install ctags cscope vim-addon-manager 
+sudo apt-get install ctags cscope vim-addon-manager silversearcher-ag 
 sudo vam install youcompleteme
 sudo apt-get install vim-youcompleteme
 
@@ -22,7 +22,8 @@ set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-L> :bprev<CR>
 nnoremap <C-P> :Unite file_rec/async<cr>
-nnoremap <space>/ :Unite grep:.<cr>
+" nnoremap <space>/ :Unite grep:.<cr>
+nnoremap <space>/ :Ag
 let g:unite_source_history_yank_enable = 1
 nnoremap <space>y :Unite history/yank<cr>
 nnoremap <space>s :Unite -quick-match buffer<cr>
