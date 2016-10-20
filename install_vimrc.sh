@@ -26,6 +26,7 @@ nnoremap <C-L> :bprev<CR>
 nnoremap <C-P> :Unite file_rec/async<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>/ :Ag  
+cmap Q bufdo q
 let g:unite_source_history_yank_enable = 1
 nnoremap <space>y :Unite history/yank<cr>
 nnoremap <space>s :Unite -quick-match buffer<cr>
