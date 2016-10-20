@@ -1,4 +1,4 @@
-sudo apt-get install ctags cscope vim-addon-manager silversearcher-ag 
+sudo apt-get install vim ctags cscope vim-addon-manager silversearcher-ag 
 sudo vam install youcompleteme
 sudo apt-get install vim-youcompleteme
 vam install youcompleteme
@@ -23,7 +23,7 @@ nnoremap <C-c> :shell<CR>
 set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-L> :bprev<CR>
-nnoremap <C-P> :Unite file_rec/async<cr>
+nnoremap <C-P> :Unite -start-insert file_rec/async<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>/ :Ag  
 cmap Q bufdo q
