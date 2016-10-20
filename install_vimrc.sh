@@ -1,6 +1,8 @@
 sudo apt-get install ctags cscope vim-addon-manager silversearcher-ag 
 sudo vam install youcompleteme
 sudo apt-get install vim-youcompleteme
+vam install youcompleteme
+
 
 cd ~/.vim_runtime
 make;
