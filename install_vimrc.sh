@@ -25,6 +25,7 @@ set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-L> :bprev<CR>
 nnoremap <C-P> :Unite -start-insert file_rec/async<cr>
+nnoremap <F5> :Unite -force-redraw -start-insert file_rec/async<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>g :Unite grep/git:.:<cr>
 nnoremap <space>/ :Ag  
