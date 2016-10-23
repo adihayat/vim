@@ -1,4 +1,5 @@
-sudo apt-get install vim ctags cscope vim-addon-manager silversearcher-ag 
+sudo apt-get update
+sudo apt-get install --upgrade vim ctags cscope vim-addon-manager silversearcher-ag 
 sudo vam install youcompleteme
 sudo apt-get install vim-youcompleteme
 vam install youcompleteme
@@ -25,6 +26,7 @@ nnoremap <C-N> :bnext<CR>
 nnoremap <C-L> :bprev<CR>
 nnoremap <C-P> :Unite -start-insert file_rec/async<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
+nnoremap <space>g :Unite grep/git:.:<cr>
 nnoremap <space>/ :Ag  
 cmap Q bufdo q
 let g:unite_source_history_yank_enable = 1
