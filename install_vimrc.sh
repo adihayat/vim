@@ -16,7 +16,7 @@ source ~/.vim_runtime/vimrcs/extended.vim
 source ~/.vim_runtime/vimrcs/cscope_maps.vim
 source ~/.vim_runtime/vimrcs/taglist.vim
 map <F4> :Tlist<CR>
-map <F2> :30Vex<CR>
+map <F2> :Explore<CR>
 nnoremap <F3> :! ctags -R . ; cscope -R -b<CR>
 set nu
 set mouse=a
@@ -31,12 +31,14 @@ nnoremap <space>g :Unite grep/git:.:<cr>
 nnoremap <space>/ :Ag  
 cmap Q bufdo q
 let g:unite_source_history_yank_enable = 1
+let g:unite_source_rec_max_cache_files=0
 nnoremap <space>y :Unite history/yank<cr>
 nnoremap <space>s :Unite -quick-match buffer<cr>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="base16color"
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
+set wildmode=full
 set tabstop=4
 set softtabstop=0 noexpandtab
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
