@@ -17,7 +17,7 @@ source ~/.vim_runtime/vimrcs/cscope_maps.vim
 source ~/.vim_runtime/vimrcs/taglist.vim
 map <F4> :Tlist<CR>
 map <F2> :Explore<CR>
-nnoremap <F3> :! ctags -R . ; cscope -R -b<CR>
+nnoremap <F3> :! rm -f ctags cscope.out ; ctags -R . ; cscope -R -b<CR>
 set nu
 set mouse=a
 nnoremap <C-c> :shell<CR>
