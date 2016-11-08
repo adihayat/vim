@@ -40,6 +40,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="base16color"
 let g:cpp_class_scope_highlight = 1
 let g:cpp_experimental_template_highlight = 1
+set nowrap
 set wildmode=full
 set tabstop=4
 set softtabstop=0 noexpandtab
