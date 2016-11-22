@@ -30,6 +30,7 @@ nnoremap <F6> :setlocal spell!<cr>
 nnoremap <F7> :MRU<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>g :Unite grep/git:.:<cr>
+nnoremap <C-\> :Unite -start-insert tag<cr>
 nnoremap <space>/ :Ag  
 cmap Q bufdo q
 let g:unite_source_history_yank_enable = 1
@@ -51,6 +52,8 @@ set foldmethod=syntax
 set foldlevel=1
 set foldclose=all
 hi Folded ctermbg=7
+
+let g:autotagTagsFile=".tags"
 
 try
 source ~/.vim_runtime/my_configs.vim

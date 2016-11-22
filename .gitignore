@@ -20,3 +20,4 @@ doc/tags
 doc/tags
 *.lock
 .vim-flavor
+/plugin/autotag.pyc
