@@ -17,7 +17,7 @@ source ~/.vim_runtime/vimrcs/cscope_maps.vim
 source ~/.vim_runtime/vimrcs/taglist.vim
 map <F4> :Tlist<CR>
 map <F2> :Explore<CR>
-nnoremap <F3> :! rm -f ctags cscope.out ; ctags -R . ; cscope -R -b<CR>
+nnoremap <F3> :! rm -f ctags cscope.out ; ctags --c++-kinds=+p --fields=+iaS --extra=+q -R . ; cscope -R -b<CR>
 set nu
 set mouse=a
 nnoremap <C-c> :shell<CR>
@@ -49,7 +49,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 "" Change to Project specific to add project included path 
 let g:ycm_global_ycm_extra_conf = "/usr/lib/vim-youcompleteme/ycm_extra_conf.py"
 set foldmethod=syntax
-set foldlevel=1
+set foldlevel=999
 set foldclose=all
 hi Folded ctermbg=7
 
