@@ -49,7 +49,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 "" Change to Project specific to add project included path 
 let g:ycm_global_ycm_extra_conf = "/usr/lib/vim-youcompleteme/ycm_extra_conf.py"
 set foldmethod=syntax
-set foldlevel=1
+set foldlevel=999
 set foldclose=all
 hi Folded ctermbg=7
 
