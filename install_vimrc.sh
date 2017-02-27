@@ -1,14 +1,17 @@
 sudo apt-get update
-sudo apt-get install --upgrade vim ctags cscope vim-addon-manager silversearcher-ag 
-sudo vam install youcompleteme
-sudo apt-get install vim-youcompleteme
-vam install youcompleteme
-
-
+sudo apt-get install --upgrade vim ctags cscope silversearcher-ag 
 cd ~/.vim_runtime
 make;
+
+git clone --recursive https://github.com/Valloric/YouCompleteMe.git
+pushd;
+cd YouCompleteMe; python install.py
+
+
 echo 'set runtimepath+=~/.vim_runtime
 
+source ~/.vim_runtime/YouCompleteMe/autoload/youcompleteme.vim
+source ~/.vim_runtime/YouCompleteMe/plugin/youcompleteme.vim
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
@@ -27,7 +30,7 @@ nnoremap <C-L> :bprev<CR>
 nnoremap <C-P> :Unite -start-insert file_rec/async<cr>
 nnoremap <F5> :Unite -force-redraw -start-insert file_rec/async<cr>
 nnoremap <F6> :setlocal spell!<cr>
-nnoremap <F7> :MRU<cr>
+nnoremap <F8> :MRU<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>g :Unite grep/git:.:<cr>
 nnoremap <C-\> :Unite -start-insert tag<cr>
