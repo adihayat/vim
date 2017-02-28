@@ -1,11 +1,12 @@
-sudo apt-get update
+#sudo apt-get update
 sudo apt-get install --upgrade vim ctags cscope silversearcher-ag 
 cd ~/.vim_runtime
 make;
-
-git clone --recursive https://github.com/Valloric/YouCompleteMe.git
-pushd;
-cd YouCompleteMe; python install.py
+cd ~/.vim_runtime;
+git clone --recursive https://github.com/Valloric/YouCompleteMe.git;
+pushd YouCompleteMe;
+git submodule update --init --recursive;
+python install.py
 
 
 echo 'set runtimepath+=~/.vim_runtime
