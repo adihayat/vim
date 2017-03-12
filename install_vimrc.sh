@@ -6,7 +6,7 @@ cd ~/.vim_runtime;
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git;
 pushd YouCompleteMe;
 git submodule update --init --recursive;
-python install.py
+python install.py --clang-completer 
 
 
 echo 'set runtimepath+=~/.vim_runtime
