@@ -1,5 +1,5 @@
 #sudo apt-get update
-sudo apt-get install --upgrade vim ctags cscope silversearcher-ag 
+sudo apt-get install --upgrade vim ctags cscope silversearcher-ag cmake
 cd ~/.vim_runtime
 make;
 cd ~/.vim_runtime;
