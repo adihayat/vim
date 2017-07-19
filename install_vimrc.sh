@@ -1,12 +1,15 @@
 #sudo apt-get update
-sudo apt-get install --upgrade vim ctags cscope silversearcher-ag cmake
+sudo apt-get --assume-yes install --upgrade vim ctags cscope silversearcher-ag cmake
 cd ~/.vim_runtime
 make;
 cd ~/.vim_runtime;
+git clone https://github.com/pboettch/vim-cmake-syntax.git
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git;
 pushd YouCompleteMe;
 git submodule update --init --recursive;
 python install.py --clang-completer 
+
+
 
 
 echo 'set runtimepath+=~/.vim_runtime
@@ -19,6 +22,7 @@ source ~/.vim_runtime/vimrcs/plugins_config.vim
 source ~/.vim_runtime/vimrcs/extended.vim
 source ~/.vim_runtime/vimrcs/cscope_maps.vim
 source ~/.vim_runtime/vimrcs/taglist.vim
+
 map <F4> :Tlist<CR>
 map <F2> :Explore<CR>
 nnoremap <F3> :! rm -f ctags cscope.out ; ctags --c++-kinds=+p --fields=+iaS --extra=+q -R . ; cscope -R -b<CR>
