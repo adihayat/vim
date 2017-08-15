@@ -3,7 +3,9 @@ sudo apt-get --assume-yes install --upgrade vim ctags cscope silversearcher-ag c
 cd ~/.vim_runtime
 make;
 cd ~/.vim_runtime;
-git clone https://github.com/pboettch/vim-cmake-syntax.git
+git clone https://github.com/nathanaelkane/vim-indent-guides.git sources_non_forked/vim-indent-guides
+git clone https://github.com/joshdick/onedark.vim.git sources_non_forked/onedark 
+git clone  https://github.com/jalcine/cmake.vim.git sources_non_forked/cmake_vim
 git clone --recursive https://github.com/Valloric/YouCompleteMe.git;
 pushd YouCompleteMe;
 git submodule update --init --recursive;
@@ -62,6 +64,7 @@ set foldclose=all
 hi Folded ctermbg=7
 
 let g:autotagTagsFile=".tags"
+colorscheme onedark
 
 try
 source ~/.vim_runtime/my_configs.vim
