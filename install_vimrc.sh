@@ -14,8 +14,12 @@ python install.py --clang-completer
 
 
 
-echo 'set runtimepath+=~/.vim_runtime
-
+echo '
+" let $VIM         = $HOME"/.vim_runtime/vim/src/vim"     
+" let $VIMRUNTIME  = $HOME"/.vim_runtime/vim/runtime" 
+" set runtimepath^=$VIMRUNTIME 
+set runtimepath+=~/.vim_runtime 
+set encoding=utf-8
 source ~/.vim_runtime/YouCompleteMe/autoload/youcompleteme.vim
 source ~/.vim_runtime/YouCompleteMe/plugin/youcompleteme.vim
 source ~/.vim_runtime/vimrcs/basic.vim
@@ -40,7 +44,7 @@ nnoremap <F6> :setlocal spell!<cr>
 nnoremap <F8> :MRU<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>g :Unite grep/git:.:<cr>
-nnoremap <C-\> :Unite -start-insert tag<cr>
+nnoremap <C-?> :Unite -start-insert tag<cr>
 nnoremap <space>/ :Ag  
 cmap Q bufdo q
 let g:unite_source_history_yank_enable = 1
