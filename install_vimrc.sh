@@ -44,7 +44,7 @@ nnoremap <F6> :setlocal spell!<cr>
 nnoremap <F8> :MRU<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>g :Unite grep/git:.:<cr>
-nnoremap <C-?> :Unite -start-insert tag<cr>
+nnoremap <F7> :Unite -start-insert tag<cr>
 nnoremap <space>/ :Ag  
 cmap Q bufdo q
 let g:unite_source_history_yank_enable = 1
