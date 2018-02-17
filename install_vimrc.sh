@@ -1,5 +1,5 @@
 #sudo apt-get update
-sudo apt-get --assume-yes install --upgrade vim ctags cscope silversearcher-ag cmake
+sudo apt-get --assume-yes install --upgrade vim ctags cscope silversearcher-ag cmake vim-nox pylint git exuberant-ctags build-essential python-dev libclang1
 cd ~/.vim_runtime
 make;
 cd ~/.vim_runtime;
@@ -62,6 +62,7 @@ set softtabstop=0 noexpandtab
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 "" Change to Project specific to add project included path 
 let g:ycm_global_ycm_extra_conf = "/usr/lib/vim-youcompleteme/ycm_extra_conf.py"
+let g:ycm_auto_trigger = 0
 set foldmethod=syntax
 set foldlevel=999
 set foldclose=all
