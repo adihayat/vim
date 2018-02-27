@@ -42,6 +42,9 @@ nnoremap <F5> :Unite -force-redraw -start-insert file_rec/async<cr>
 nnoremap <F6> :setlocal spell!<cr>
 nnoremap <F8> :MRU<cr>
 nnoremap <F9> :YcmCompleter GetDoc<cr>
+nnoremap <F12> :YcmCompleter GoToDeclaration<cr>
+nnoremap <F10> :YcmCompleter GoToDefinition<cr>
+nnoremap <C-h> :YcmCompleter GoToInclude<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>g :Unite grep/git:.:<cr>
 nnoremap <F7> :Unite -start-insert tag<cr>
@@ -64,9 +67,9 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 let g:ycm_global_ycm_extra_conf = "/usr/lib/vim-youcompleteme/ycm_extra_conf.py"
 let g:ycm_auto_trigger = 0
 let g:ctrlp_max_files=0
-set foldmethod=syntax
-set foldlevel=999
-set foldclose=all
+""set foldmethod=syntax
+""set foldlevel=999
+""set foldclose=all
 hi Folded ctermbg=7
 
 let g:autotagTagsFile=".tags"
