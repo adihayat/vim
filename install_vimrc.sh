@@ -42,9 +42,10 @@ nnoremap <F5> :Unite -force-redraw -start-insert file_rec/async<cr>
 nnoremap <F6> :setlocal spell!<cr>
 nnoremap <F8> :MRU<cr>
 nnoremap <F9> :YcmCompleter GetDoc<cr>
-nnoremap <F12> :YcmCompleter GoToDeclaration<cr>
-nnoremap <F10> :YcmCompleter GoToDefinition<cr>
-nnoremap <C-h> :YcmCompleter GoToInclude<cr>
+nnoremap <C-h> :YcmCompleter GoToDeclaration<cr>
+nnoremap <C-j> :YcmCompleter GoToDefinition<cr>
+nnoremap <C-k> :YcmCompleter GoToReferences<cr>
+nnoremap <F12> :YcmCompleter GoToInclude<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>g :Unite grep/git:.:<cr>
 nnoremap <F7> :Unite -start-insert tag<cr>
