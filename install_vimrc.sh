@@ -72,6 +72,14 @@ hi Folded ctermbg=7
 let g:autotagTagsFile=".tags"
 colorscheme onedark
 
+set t_BE=
+let g:autotagTagsFile=".tags"
+colorscheme onedark
+set list listchars=tab:>!,trail:.<Plug>PeepOpenrecedes:<,extends:>
+hi SpecialKey guifg=black guibg=magenta ctermfg=black ctermbg=red
+setlocal expandtab shiftwidth=4 softtabstop=4 tabstop=8
+
+
 try
 source ~/.vim_runtime/my_configs.vim
 catch
