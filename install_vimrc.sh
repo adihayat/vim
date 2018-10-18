@@ -31,18 +31,21 @@ source ~/.vim_runtime/vimrcs/taglist.vim
 
 map <F4> :Tlist<CR>
 map <F2> :Explore<CR>
-nnoremap <F3> :! rm -f ctags cscope.out ; ctags --c++-kinds=+p --fields=+iaS --extra=+q -R . ; cscope -R -b<CR>
+nnoremap <F3> :! rm -f ctags cscope.out ; ctags --c++-kinds=+p --fields=+iaS --extra=+q -R . &  cscope -R -b &<CR>
 set nu
 set mouse=a
 nnoremap <C-c> :shell<CR>
 set hidden
 nnoremap <C-N> :bnext<CR>
-nnoremap <C-L> :bprev<CR>
-nnoremap <C-P> :Unite -start-insert file_rec/async<cr>
+nnoremap <C-P> :bprev<CR>
 nnoremap <F5> :Unite -force-redraw -start-insert file_rec/async<cr>
 nnoremap <F6> :setlocal spell!<cr>
 nnoremap <F8> :MRU<cr>
 nnoremap <F9> :YcmCompleter GetDoc<cr>
+nnoremap <C-h> :YcmCompleter GoToDeclaration<cr>
+nnoremap <C-j> :YcmCompleter GoToDefinition<cr>
+nnoremap <C-k> :YcmCompleter GoToReferences<cr>
+nnoremap <F12> :YcmCompleter GoToInclude<cr>
 " nnoremap <space>/ :Unite grep:.<cr>
 nnoremap <space>g :Unite grep/git:.:<cr>
 nnoremap <F7> :Unite -start-insert tag<cr>
@@ -64,9 +67,10 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 "" Change to Project specific to add project included path 
 let g:ycm_global_ycm_extra_conf = "/usr/lib/vim-youcompleteme/ycm_extra_conf.py"
 let g:ycm_auto_trigger = 0
-set foldmethod=syntax
-set foldlevel=999
-set foldclose=all
+let g:ctrlp_max_files=0
+""set foldmethod=syntax
+""set foldlevel=999
+""set foldclose=all
 hi Folded ctermbg=7
 
 let g:autotagTagsFile=".tags"
